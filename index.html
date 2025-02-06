@@ -4,15 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chapter 3</title> <!-- change this  -->
-    <!-- below 3 links all load google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Chapter 3</title>A Caucus-Race and a Long Tale </title>. 
     <!-- modern normalize for cross-browser compatibility -->
+     <!--Link to External CSS-->
+     ,link rel="stylesheet" href="css/style.css">
     <link href="css/modern-normalize.css" rel="stylesheet">
     <!--add our stylesheet on this line -->
-  </head>
+  </head><link href="css/style.css" rel="stylesheet">
   <body>
     <main id="page">
       <nav><!-- main menu -->
@@ -21,7 +19,54 @@
           <li><a href="#" class="active">Ch. 3</a></li>
           <li><a href="#">Next &#8594;</a></li>
         </ul>
-      </nav>
+      </nav {
+          display: flex;
+          justify-content: space-between;
+          background-color: #333;
+          padding: 10px;
+      }
+      nav a { 
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
+      nav {
+        background-color: #004080; /*Dark blue*/
+        paddng: 10px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+      nav ul li {
+        margin; 0 15 pc;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: #ffcc00; /* Gold highlight */
+      }
+      figure {
+        text-align: center;
+        margin: 20px auto;
+      }
+      figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8 px;
+        box-shadow: 2 px 2px 10px rgba (0,0,0,0.2);
+      }
+      figcaption {
+        font-style: italic;
+        margin-top: 5px;
+        color: #555;
+      }
       <header><!-- hero unit -->
         <figure>
           <img src="img/tale.jpg" alt="A very long tale" />
@@ -36,6 +81,10 @@
         <p>Indeed, she had quite a long argument with the Lory, who at last turned sulky, and would only say, “I am older than you, and must know better”; and this Alice would not allow without knowing how old it was, and, as the Lory positively refused to tell its age, there was no more to be said.</p>
         <p>At last the Mouse, who seemed to be a person of authority among them, called out, “Sit down, all of you, and listen to me! I’ll soon make you dry enough!” They all sat down at once, in a large ring, with the Mouse in the middle. Alice kept her eyes anxiously fixed on it, for she felt sure she would catch a bad cold if she did not get dry very soon.</p>
         <figure>
+          <figure>
+            <img src="img/dodo.jpg" alt="Dodo bird proposing a caucus-race">
+            <figcaption>As the driest thing he can think of, the Dodo proposes a caucus-race. It works splendidly.</figcaption>
+          </figure>
           <figcaption>As the driest thing he can think of, the Dodo proposes a caucus-race. It works splendidly.</figcaption>
         </figure>
         <p>“Ahem!” said the Mouse with an important air, “are you all ready? This is the driest thing I know. Silence all round, if you please! ‘William the Conqueror, whose cause was favoured by the pope, was soon submitted to by the English, who wanted leaders, and had been of late much accustomed to usurpation and conquest. Edwin and Morcar, the earls of Mercia and Northumbria–'"</p>
@@ -59,9 +108,17 @@
           <a class="button" href="#">&nbsp;Next &#8594;</a>
         </div>
       </article>
-      <footer>
-        <p>&copy; 2024 Your Name</p>
-      </footer>
+      <footer></footer>
+          <p>&copy; 2024 Your Name</p>
+        </footer {
+          text-align: center;
+          padding: 10px;
+          background-color: #004080;
+          color: white;
+          margi-top: 20px;
+        }
     </main>
-  </body>
+  </body> {
+      font-family: 'Gentium Book Plus', serif;
+  }
 </html>
