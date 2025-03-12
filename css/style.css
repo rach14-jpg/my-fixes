@@ -11,42 +11,48 @@ img {
 	height: auto;
 }
 body {
-  color: #444;
+  color: #4443030;
   font-size: 1.6rem;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Gentium Book Plus', serif;
 }
 p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #4443030;
 }
 footer {
   text-align: center;
-  padding: 1em 0 .3em 0;
-  color: #D0D0D0;
+  font-family: cursive;
+  text-decoration: underline;
+  padding: .2em;
+  color: #ffffff;
 }
 /*-- Main Menu Styles--*/
 nav ul {
+  display; flex;
+  justify-content: space-between;
+  font-family: cursive;
   list-style: none;
   padding: 1em;
-}
-nav a:link, nav a:visited {
-  color: #D0D0D0;
-  text-decoration: none;
+  margin-top: auto;
 }
 nav a:hover, nav a:active  {
-  color: #F0F0F0;
+  color: #ffffff;
   text-decoration: underline;
 }
-nav a.active {
+nav a:hover, nav a: active {
   color: #F0F0F0;
+  text-decoration:underline;
+}
+nav a.active {
+  color: #F0F0F0
 }
 /*-- Hero Unit Styles--*/
 header {
   width: 510px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 header img {
   width: 100%;
@@ -55,45 +61,72 @@ header img {
 header h1 {
   margin: 0 auto;
   padding: 0 auto;
+  text-align: center;
 }
 .small {
-  margin-top: 1em;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  color: rgb(124,90,48);
+  font-weight: 900;
+  font-size: 100%
+  text-transform: uppercase;
 }
 /*-- Article Styles--*/
 article {
   width: 768px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   line-height: 1.3;
 }
 article figure {
   width: 39%;
+  float: right;
   margin: 0 0 1.25em 1.25em;
 }
 article figcaption {
-  font-size: inherit;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 70%
 }
 .pagination {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
   width: 96%;
 }
 a.button {
-  border: 2px solid #888;
+  border: 2px solid #443030;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color: #443030;
   border-radius: 200px;
-  font-family: 'Lato', sans-serif;
+  font-family: cursive;
   font-weight: 300;
   font-size: 80%;
 }
-a.button:hover, a.button:active {
-  border: 1px solid #444;
+a.button:hover, {background-color:rgb(247,243,236)}
+
+a.button:active {
+  border: 1px solid #443030;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
   text-decoration: none;
-  color: #222;
+  color: #443030;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
+}
+.dropcap {
+  font-size: 4.5em;
+  float: left;
+  line-height: .60;
+  margin-right: 0.2 em;
+}
+body {
+  background-color:rgb(247,243,236)
 }
